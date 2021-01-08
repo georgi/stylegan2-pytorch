@@ -9,7 +9,7 @@ git submodule update
 
 mkdir -p /storage/models
 
-pip install ninja tensorflow==1.15
+pip install ninja
 
 wget --quiet $PKL_URL
 
