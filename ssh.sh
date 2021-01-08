@@ -1,4 +1,10 @@
 #!/bin/bash
+
+echo ==================================================================
+echo IP: $PS_HOST_PUBLIC_IP_ADDRESS
+echo hostname: $PS_HOSTNAME
+echo ==================================================================
+
 apt-get update && apt-get install -y openssh-server
 mkdir /var/run/sshd
 echo 'root:mys3cr3t@PW' | chpasswd
