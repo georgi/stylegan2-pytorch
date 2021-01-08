@@ -4,6 +4,8 @@ PKL_URL=$1
 PKL_FILE=$(basename $PKL_URL)
 PT_FILE="${PKL_FILE%.*}.pt"
 
+git submodule init
+
 mkdir -p /storage/models
 
 pip install ninja
