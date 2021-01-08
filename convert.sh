@@ -5,6 +5,7 @@ PKL_FILE=$(basename $PKL_URL)
 PT_FILE="${PKL_FILE%.*}.pt"
 
 git submodule init
+git submodule update
 
 mkdir -p /storage/models
 
